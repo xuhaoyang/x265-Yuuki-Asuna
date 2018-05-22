@@ -1163,7 +1163,6 @@ typedef struct x265_param
 
     int opts;
 
-    bool bStylish;
 
     struct
     {
@@ -1619,7 +1618,7 @@ static const char * const x265_preset_names[] = { "ultrafast", "superfast", "ver
  *      100 times faster than placebo!
  *
  *      Currently available tunings are: */
-static const char * const x265_tune_names[] = { "psnr", "ssim", "grain", "zerolatency", "fastdecode", "littlepox", "vcb-s", 0 };
+static const char * const x265_tune_names[] = { "psnr", "ssim", "grain", "zerolatency", "fastdecode", "littlepox","littlepox++", "vcb-s","vcb-s++", 0 };
 
 /*      returns 0 on success, negative on failure (e.g. invalid preset/tune name). */
 int x265_param_default_preset(x265_param *, const char *preset, const char *tune);
